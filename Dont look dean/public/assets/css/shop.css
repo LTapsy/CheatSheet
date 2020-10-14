@@ -1,0 +1,106 @@
+
+/* Car Section */
+
+.vehicles{
+    padding:0 15px 15px 15px;
+}
+
+.vehicleList{
+    flex-direction: column;
+    align-items: center;
+}
+
+.vehicleListItems{
+    background:white;
+    filter: drop-shadow(0px 15px 5px #3333331e);
+    border-radius: 20px;
+    padding:25px 10px;
+    flex-direction: column;
+    align-items: center;
+    margin:10px 0;
+    width:300px;
+}
+
+.carImage{
+    width:300px;
+}
+
+.carDetails{
+    padding:10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.carDetails p,.additionalCarInfo p{
+    text-align: center;
+}
+
+
+.carName{
+    text-align: center;
+    width:150px;
+}
+
+.carPrice{
+    color:#79C6AC;
+}
+
+.additionalCarInfo{
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carDetails button{
+    background:#79C6AC;
+    color:white;
+    border:none;
+    width:200px;
+    margin:20px 0 0 0;
+    padding:10px 20px;
+    border-radius:10px;
+    font-family: ralewaySemiBold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carDetails a button{
+    width:200px;
+}
+
+@media screen and (min-width: 720px) {
+    .vehicleList{
+        flex-direction: column;
+        align-items: center;
+    }
+    .vehicleListItems{
+        background:white;
+        filter: drop-shadow(0px 15px 5px #3333331e);
+        border-radius: 20px;
+        padding:25px;
+        flex-direction: row;
+        /* align-items: center; */
+        margin:10px 0;
+        width:800px;
+    }
+    .carName{
+        text-align: left;
+        width:100%;
+    }
+    .carDetails{
+        padding:10px 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .additionalCarInfo{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .moreInfoBtn{
+        display:none;
+    }
+}
